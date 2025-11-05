@@ -30,26 +30,31 @@
 
 ## Directory Layout
 
-README.md
-root/
-├─ COM/
-│ ├─ source
-│ ├─ results/
-│ ├─ logs/
-│ └─ attack_chain/
-├─ wannacry/
-│ ├─ source
-│ ├─ results/
-│ ├─ logs/
-│ └─ attack_chain/
-└─ apt-36/
-├─ source
-├─ results/
-├─ logs/
-└─ attack_chain/
+project-root/
+│
+├── README.md
+│
+├── root/
+│   ├── COM/
+│   │   ├── source/
+│   │   ├── results/
+│   │   ├── logs/
+│   │   └── attack chain/
+│   │
+│   ├── wannacry/
+│   │   ├── source/
+│   │   ├── results/
+│   │   ├── logs/
+│   │   └── attack chain/
+│   │
+│   └── APT-36/
+│       ├── source/
+│       ├── results/
+│       ├── logs/
+│       └── attack chain/
 
 
-> Note: folder names use `snake_case` or `kebab-case` depending on your repo conventions. The `source/` directories *may* contain raw executable samples — treat them as live malware.
+
 
 ---
 
@@ -75,9 +80,8 @@ root/
 1. **Never execute** files from `source/` on any machine connected to production networks or the internet.  
 2. Use **dedicated, isolated analysis environments**: air-gapped VMs, sandbox appliances, or purpose-built labs with snapshot/rollback.  
 3. Prefer **static analysis** (disassembly, strings, YARA, entropy). If dynamic analysis is necessary, use isolated VMs with controlled or simulated networks.  
-4. Maintain an integrity manifest (`sha256.txt`) for all original samples and keep original copies in secure, access-controlled storage.  
+4. There exist an integrity manifest (`sha256.txt`) for all original samples 
 5. Do not upload raw samples to public services. Share hashes and sanitized artifacts instead. Use encrypted channels and legal agreements for sensitive sharing.  
-6. Treat all network indicators as malicious until validated. Do not allow samples to access the public internet.
 
 ---
 
@@ -121,7 +125,7 @@ Possession, distribution, or intentional use of malware may violate local, natio
 **Maintainer:** bash  
 **Role:** Repository Owner 
 
-**Maintainer:** anonyomous4140p
+**Maintainer:** anonyomous4140p **
 **Role:** Repository Owner  
 
 ---
