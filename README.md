@@ -30,6 +30,7 @@
 
 ## Directory Layout
 
+```text
 project-root/
 │
 ├── README.md
@@ -52,7 +53,6 @@ project-root/
 │       ├── results/
 │       ├── logs/
 │       └── attack chain/
-
 
 
 
