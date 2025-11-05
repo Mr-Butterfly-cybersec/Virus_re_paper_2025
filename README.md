@@ -53,8 +53,7 @@ project-root/
 │       ├── results/
 │       ├── logs/
 │       └── attack chain/
-
-
+```
 
 ---
 
