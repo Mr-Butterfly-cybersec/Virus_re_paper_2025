@@ -105,14 +105,6 @@ If you are unsure about intended use, consult legal or your security lead before
 
 ---
 
-## Contributing
-
-- Add sanitized analysis outputs to the appropriate `results/` or `attack_chain/` folders. Each contribution must include metadata and the author’s initials.  
-- **Do not** add raw executable samples to shared or public areas. If you must share a sample with another trusted analyst, use secure channels and provide only hash references in the repo.  
-- Pull requests should be reviewed by a repository maintainer before merging.
-
----
-
 ## Legal & Ethical Notice
 
 Possession, distribution, or intentional use of malware may violate local, national, or international laws. Use this archive **only** for defensive, educational, or forensic purposes and ensure compliance with applicable law and organizational policy. The repository owner and contributors disclaim liability for misuse.
@@ -129,36 +121,7 @@ Possession, distribution, or intentional use of malware may violate local, natio
 
 ---
 
-## License & Attribution
-
-**Suggested documentation license:** Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0) — apply this to sanitized documentation and analysis outputs only.  
-**Important:** Do **not** license or redistribute raw malware binaries. Do not include raw executables under a standard open-source license.
-
-If you prefer a different license for documentation, replace the text above and add a `LICENSE` file.
-
----
-
-## Quick Checklist (Before touching anything)
-
-- [ ] Are you an authorized analyst?  
-- [ ] Is the analysis environment air-gapped and snapshotted?  
-- [ ] Do you have integrity hashes for samples?  
-- [ ] Have you read organizational policy on malware handling?
-
-If any answer is **no**, stop and consult your security/legal team.
-
----
-
-## Example Files (illustrative names)
-
-- `root/COM/source/sha256.txt`  
-- `root/wannacry/results/wannacry_report.pdf`  
-- `root/apt-36/attack_chain/iocs.csv`  
-- `root/<sample>/logs/sandbox_trace.pcap`
-
----
-
-## Final Note (plain talk)
+## Final Note 
 
 This repo contains dangerous stuff. Treat it like a live bomb: observe from behind glass, don’t touch any wires, and call someone with the right training if you’re not sure. Use `results/` and `attack_chain/` for learning and detection work — raw `source/` files belong only in locked forensic storage and secured analysis labs.
 
